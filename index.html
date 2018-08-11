@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Neighborhood Map</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+</head>
+<body>
+	<div class="slide-menu" data-bind = "visible: showMenu">
+		<h3>Neighborhood</h3>
+
+		<div class="search">
+			<input class="search-bar" data-bind = "value: location">
+			<button class="search-button fa fa-search" data-bind = "click: zoomToArea"></button>
+		</div>
+
+		<h3>Popular Places</h3>
+
+		<div class="search">
+			<input class="search-bar" placeholder="🔍 Search for popular places...." data-bind = "textInput: searchPlaces" >
+		</div>
+
+		<div class="places-list">
+			<ul class="popular-places" data-bind="foreach: filteredMarkers">
+				<li class="places" data-bind="text: title, click: showInfo"></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="main" data-bind = "css: {'wide': isWide}">
+		<div id="header">
+		  <span class="menu-icon fa fa-bars" data-bind = "click: toggleMenu"></span>
+		</div>
+
+		<div id="map"></div>
+	</div>
+
+	<script src='js/knockout-3.4.2.js'></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/app.js"></script>
+	<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADnoj3e_6ArNZnR04V08_oFA8uGbc43RQ&v=3&callback=initMap" onerror="errorHandling()"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
+}
+
+.slide-menu {
+    background: #000000;
+    height: 100%;
+    width: 50%;
+}
+
+
+h3 {
+ margin: 0;
+ height: 35px;
+ display:flex;
+ align-items:center;
+ color: #FFAA00;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.search {
+  display:flex;
+  height: 35px;
+}
+
+.search-bar {
+  width:100%;
+  padding: 5px;
+  outline: 0;
+}
+
+.search-bar:focus {
+    border: 2px solid #FFAA00;
+}
+
+.search-button {
+  cursor: pointer;
+  border: none;
+  padding: 0 20px;
+  background-color: #FF9800;
+  color: white;
+  font-size: 20px;
+}
+
+.search-button:hover {
+  background-color: #F57C00;
+}
+
+.places-list {
+  height: calc(100% - 140px);
+  overflow: scroll;
+}
+
+.popular-places {
+  margin: 0;
+  padding: 0;
+}
+
+.places {
+  list-style-type: none;
+  padding: 10px;
+  color:white;
+}
+
+.places:hover {
+  background-color: #FF9800;
+  cursor: pointer;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.wide {
+  width:50%;
+}
+
+#header {
+  height: 35px;
+  display:flex;
+  align-items:center;
+  background-color: #212121;
+}
+
+.menu-icon {
+  cursor: pointer;
+  margin-left: 1%;
+  color: white;
+  font-size: 23px;
+}
+
+#map{
+  height: 95%;
+}

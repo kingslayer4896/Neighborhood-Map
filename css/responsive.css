@@ -1,0 +1,94 @@
+@media screen and (min-width: 600px) {
+  .slide-menu {
+    width: 30%;
+  }
+
+  .wide {
+    width:70%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 13px;
+  }
+
+  h3, .search, #header {
+   height: 30px;
+  }
+
+  .search-bar {
+    font-size: 11px;
+    padding: 4px;
+  }
+
+  .places-list {
+    height: calc(100% - 120px);
+  }
+
+  .menu-icon {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 750px) and (min-height: 1000px) {
+  body {
+    font-size: 22px;
+  }
+
+  .slide-menu {
+    width: 35%;
+  }
+
+  h3, .search, #header {
+   height: 50px;
+  }
+
+  .search-bar {
+    font-size: 18px;
+  }
+
+  .search-button {
+    font-size: 30px;
+    padding: 0 30px;
+  }
+
+  .places-list {
+    height: calc(100% - 200px);
+  }
+
+  .wide {
+    width:65%;
+  }
+
+  .menu-icon {
+    font-size: 31px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (min-height: 1000px) {
+  body {
+    font-size: 27px;
+  }
+
+  h3, .search, #header {
+   height: 70px;
+  }
+
+  .search-bar {
+    font-size: 24.5px;
+  }
+
+  .search-button {
+    font-size: 38px;
+    padding: 0 38px;
+  }
+
+  .places-list {
+    height: calc(100% - 280px);
+  }
+
+  .menu-icon {
+    font-size: 45px;
+  }
+}
